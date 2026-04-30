@@ -1,0 +1,13 @@
+correct_pw = "python123"
+attempts = 0
+
+while attempts < 3:
+    entry = input("Enter password: ")
+    if entry == correct_pw:
+        print("Access granted!")
+        break
+    else:
+        attempts += 1
+        print(f"Wrong. Attempts left: {3 - attempts}")
+else:
+    print("Locked out!")
